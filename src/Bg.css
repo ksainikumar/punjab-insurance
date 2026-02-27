@@ -1,0 +1,68 @@
+/* Section Background */
+.rdsp-section {
+  background: linear-gradient(to right, #e8f1f5, #f5f8fb);
+  padding: 90px 60px;
+  text-align: center;
+}
+
+/* Title */
+.rdsp-title {
+  font-size: 42px;
+  font-weight: 500px;
+  color: #111;
+}
+
+.rdsp-line {
+  width: 70px;
+  height: 4px;
+  background: #000;
+  margin: 15px auto 25px;
+  border-radius: 5px;
+}
+
+/* Description */
+.rdsp-description {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Image Card */
+.rdsp-image-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.rdsp-image-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Footer Text */
+.rdsp-footer-text {
+  max-width: 950px;
+  margin: 0 auto;
+  font-size: 17px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .rdsp-section {
+    padding: 60px 20px;
+  }
+
+  .rdsp-title {
+    font-size: 30px;
+  }
+
+  .rdsp-description {
+    font-size: 15px;
+  }
+}

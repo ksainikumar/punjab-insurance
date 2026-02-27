@@ -1,0 +1,165 @@
+ /* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* TIMELINE */
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #3b5cff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* HELP BOX */
+.help-box {
+  background: #eef4ff;
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 18px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.chat-btn {
+  background: #3b5cff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* CTA BUTTONS */
+.buttons button {
+  margin-right: 8px;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(to right, #3b5cff, #ff4b5c);
+  color: white;
+  border: none;
+}
+
+/* FORM */
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 100px;
+  margin-top: 5px;
+}
+
+/* ✅ CHECKBOX — CLOSE ALIGNMENT */
+.checkbox {
+  display: inline-flex;     /* keeps text close */
+  align-items: center;
+  gap: 3px;                 /* minimal space */
+  margin-top: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+.checkbox input {
+  margin: 0;                /* remove browser default spacing */
+  width: 15px;
+  height: 15px;
+}
+
+/* SUBMIT BUTTON */
+.submit {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #c7cbd1;  /* light when disabled */
+  color: white;
+  margin-top: 12px;
+  cursor: not-allowed;
+  transition: 0.3s ease;
+}
+
+.submit.active {
+  background: #2c3e50;  /* dark when enabled */
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

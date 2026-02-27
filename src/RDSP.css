@@ -1,0 +1,103 @@
+.rdsp-wrapper {
+  background: #f3f6fa;
+  padding: 70px 60px;
+}
+
+/* Top paragraph */
+.rdsp-top-text {
+  max-width: 1000px;
+  margin: 0 auto 25px;
+  font-size: 18px;
+  color: #4a5568;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Support badge */
+.rdsp-support {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  background: #eef3f8;
+  padding: 14px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  color: #2d3748;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+}
+
+.support-dot {
+  width: 14px;
+  height: 14px;
+  background: #2b6cb0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(43,108,176,0.2);
+}
+
+/* Grid */
+.rdsp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.rdsp-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  position: relative;
+  border-left: 6px solid #2b6cb0;
+  transition: 0.3s ease;
+}
+
+.rdsp-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Card header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.card-number {
+  width: 45px;
+  height: 45px;
+  background: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #2b6cb0;
+  font-size: 16px;
+}
+
+.rdsp-card h3 {
+  font-size: 20px;
+  color: #1a202c;
+}
+
+.rdsp-card p {
+  font-size: 16px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .rdsp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rdsp-wrapper {
+    padding: 50px 20px;
+  }
+}

@@ -1,0 +1,97 @@
+/* Section Background */
+.findpath-section {
+  padding: 100px 60px;
+  background: linear-gradient(to right, #e9f0f4, #f4f7fb);
+  text-align: center;
+}
+
+/* Title */
+.findpath-title {
+  font-size: 44px;
+  font-weight: 500;
+  color: #111;
+}
+
+.findpath-underline {
+  width: 60px;
+  height: 4px;
+  background: #000;
+  margin: 15px auto 70px;
+  border-radius: 4px;
+}
+
+/* Cards Layout */
+.findpath-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Single Card */
+.findpath-card {
+  background: #f1f1f1;
+  padding: 35px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.findpath-card:hover {
+  transform: translateY(-5px);
+}
+
+.findpath-card h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Card Image */
+.findpath-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Text */
+.findpath-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.findpath-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #1f4aa8, #b22234);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.findpath-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .findpath-section {
+    padding: 70px 20px;
+  }
+
+  .findpath-title {
+    font-size: 32px;
+  }
+
+  .findpath-cards {
+    gap: 25px;
+  }
+}
