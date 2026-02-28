@@ -1,10 +1,9 @@
 import React from "react";
 import "./Findpath.css";
 
-import img1 from "/Users/yogeshsaini/Punjab-insurance/src/image copy 4.png";      // replace with your image
-import img2 from "/Users/yogeshsaini/Punjab-insurance/src/image copy 3.png";   // replace with your image
-import img3 from "/Users/yogeshsaini/Punjab-insurance/src/image copy 2.png";     // replace with your image
-
+import img1 from ".assets/image copy 4.png";      // replace with your image
+import img2 from ".assets/image copy 3.png";   // replace with your image
+import img3 from "./assets/image copy 2.png";     // replace with your imag
 function Findpath() {
   return (
     <section className="findpath-section">

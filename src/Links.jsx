@@ -1,6 +1,6 @@
  import React from "react";
 import "./Links.css";
-import logo from "/Users/yogeshsaini/Punjab-insurance/src/image copy 7.png"; // replace with your logo
+import logo from ".assets/image copy 7.png"; // replace with your logo
 
 function Links() {
   return (

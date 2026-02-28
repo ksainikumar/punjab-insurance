@@ -1,6 +1,6 @@
 import React from "react";
 import "./Steps.css";
-import stepImg from "/Users/yogeshsaini/Punjab-insurance/src/image copy 6.png"; // replace with your image
+import stepImg from ".assets/image copy 6.png"; // replace with your image
 
 function Steps() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Support.css";
 
-import supportImg from "/Users/yogeshsaini/Punjab-insurance/src/image copy 5.png"; // replace with your image
+import supportImg from ".assets/image copy 5.png"; // replace with your image
 
 function Support() {
   return (

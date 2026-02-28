@@ -1,6 +1,6 @@
  import React from "react";
 import "./App.css";
-import heroImg from "/Users/yogeshsaini/Punjab-insurance/src/image.png"; // place image in src folder
+import heroImg from ".assets/image.png"; // place image in src folder
 
 export default function App() {
 return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Bg.css";
-import heroImage from "/Users/yogeshsaini/Punjab-insurance/src/image copy.png"; // <-- replace with your image filename
+import heroImage from ".assets/image copy.png"; // <-- replace with your image filename
 
 function Bg() {
   return (
