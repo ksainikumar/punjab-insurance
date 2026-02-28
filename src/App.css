@@ -1,211 +1,210 @@
  /* ================= RESET ================= */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
 }
 
 .app {
-  width: 100%;
+width: 100%;
 }
 
 /* ================= TOP BAR ================= */
 .topbar {
-  background: #0d47a1;
-  color: #fff;
-  padding: 6px 20px;
-  display: flex;
-  justify-content: flex-end; /* right side */
-  align-items: center;
-  gap: 15px;
-  font-size: 14px;
+background: #0d47a1;
+color: #fff;
+padding: 6px 20px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 15px;
+font-size: 14px;
 }
 
 .phone {
-  font-weight: bold;
+font-weight: bold;
 }
 
 /* ================= NAVBAR ================= */
 .navbar {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 15px 40px;
-  background: #1565c0;
+display: flex;
+align-items: center;
+padding: 15px 40px;
+background: #1565c0;
 }
 
-/* Logo */
+/* Logo stays left */
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
 }
 
 .logo-icon {
-  background: #fff;
-  color: #1565c0;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 4px;
+background: #fff;
+color: #1565c0;
+font-weight: bold;
+padding: 8px 12px;
+border-radius: 4px;
 }
 
 .logo-text {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
+font-size: 18px;
+font-weight: bold;
+color: #fff;
 }
 
-/* Nav Menu */
+/* Menu next to logo */
 .navbar nav {
-  display: flex;
-  gap: 25px;
-  margin-left: auto; /* push menu right */
+display: flex;
+gap: 30px;
+margin-left: 40px;
 }
 
 .navbar nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
+text-decoration: none;
+color: #fff;
+font-weight: 500;
 }
 
 .navbar nav a:hover {
-  opacity: 0.8;
+opacity: 0.8;
+}
+
+/* ================= DROPDOWN (ADDED ONLY) ================= */
+.dropdown {
+position: relative;
+}
+
+.dropbtn {
+cursor: pointer;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color:#3b5cff;
+min-width: 180px;
+
+z-index: 1000;
+}
+
+.dropdown-content a {
+color: #1565c0;
+padding: 10px 14px;
+display: block;
+text-decoration: none;
+}
+
+.dropdown-content a:hover {
+
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
 }
 
 /* ================= HERO ================= */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 40px;
-  background: #1e88e5;
-  color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 60px 40px;
+background: #1e88e5;
+color: #fff;
 }
 
 .hero-left {
-  width: 55%;
+width: 55%;
 }
 
 .hero-left h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
+font-size: 32px;
+margin-bottom: 20px;
 }
 
 .hero-left p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 25px;
+font-size: 16px;
+line-height: 1.6;
+margin-bottom: 25px;
 }
 
 /* Buttons */
 .buttons {
-  display: flex;
-  gap: 15px;
+display: flex;
+gap: 15px;
 }
 
 .btn {
-  padding: 12px 18px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
+padding: 12px 18px;
+border-radius: 4px;
+border: none;
+cursor: pointer;
 }
 
 .primary {
-  background: #fff;
-  color: #1565c0;
-  font-weight: bold;
+background: #fff;
+color: #1565c0;
+font-weight: bold;
 }
 
 .secondary {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+background: transparent;
+border: 1px solid #fff;
+color: #fff;
 }
 
 /* Hero Image */
 .hero-right {
-  width: 40%;
-  display: flex;
-  justify-content: center;
+width: 40%;
+display: flex;
+justify-content: center;
 }
 
 .hero-right img {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 12px;
+width: 100%;
+max-width: 420px;
+border-radius: 12px;
 }
 
-/* ================================================= */
-/* 📱 MOBILE RESPONSIVE (≤ 768px) */
-/* ================================================= */
+/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
-
-  /* Topbar center on mobile */
-  .topbar {
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-
-  /* Navbar stacked */
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 15px 20px;
-  }
-
-  .navbar nav {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-    margin-left: 0;
-  }
-
-  .navbar nav a {
-    padding: 8px 0;
-  }
-
-  /* Hero stacked */
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .hero-left,
-  .hero-right {
-    width: 100%;
-  }
-
-  .hero-left h1 {
-    font-size: 24px;
-  }
-
-  .hero-left p {
-    font-size: 14px;
-  }
-
-  .buttons {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .hero-right {
-    margin-top: 25px;
-  }
+.topbar {
+justify-content: center;
+text-align: center;
+flex-wrap: wrap;
 }
 
-/* ================================================= */
-/* 💻 LARGE DESKTOP (≥ 1200px) */
-/* ================================================= */
-@media (min-width: 1200px) {
-  .hero {
-    padding: 80px 100px;
-  }
+.navbar {
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+}
 
-  .hero-left h1 {
-    font-size: 40px;
-  }
+.navbar nav {
+flex-direction: column;
+margin-left: 0;
+gap: 10px;
+}
+
+.hero {
+flex-direction: column;
+text-align: center;
+padding: 40px 20px;
+}
+
+.hero-left,
+.hero-right {
+width: 100%;
+}
+
+.buttons {
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.hero-right {
+margin-top: 20px;
+}
 }

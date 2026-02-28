@@ -21,7 +21,7 @@ export default function App() {
           <div className="timeline">
             {[
               "Open ages 0–59; grants & bonds pay until you turn 49.",
-              "Government grants (CDSG): up to $3,500/year — $70,000 lifetime.",
+              "Government grants (CDSG): up to $3,500/year — $70,000 .",
               "Government bond (CDSB): up to $1,000/year — $20,000 lifetime.",
               "Tax-deferred growth; anyone can contribute.",
             ].map((text, i) => (
